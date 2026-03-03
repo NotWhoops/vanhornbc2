@@ -1,3 +1,6 @@
+export default apiData1/apiData2/apiData3/apiData4/apiData5/apiData6/apiData7/apiData8/apiData9/apiData10;
+
+
 const apiData1 = async () => {
     const response = await fetch("https://allforoneapi-hhdrdah6b0hgfgdz.westus3-01.azurewebsites.net/AddingTwoNumbers/AddingTwoNumbers");
     const data = await response.json();
