@@ -7,7 +7,7 @@
 
 
 import { Card } from 'flowbite-react';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 interface GreetingProps {
     num1: number;
@@ -23,6 +23,22 @@ const apiData1 = async () => {
     return data[0];
 }
 
+function GetData() {
+    const [api, GetApi] = useState(0);
+
+
+useEffect(() => {
+    setData(( => apiData1 * 2)
+), [apiData1]);
+
+
+return (
+    <>
+    <p>The Api: {}</p>
+    </>
+)
+}
+}
 
     return (
     <Card>
