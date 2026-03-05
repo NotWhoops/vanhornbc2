@@ -3,7 +3,7 @@
 import { log } from "console";
 import { useEffect, useState } from "react";
 import Greeting from "./components/AddingTwoNumbers";
-import { apiData } from "@/scripts/DataService";
+import apiData from "@/scripts/DataService";
 
 interface IAgify {
   name: string 
@@ -23,7 +23,7 @@ export default function Home() {
 
   const handleSubmit = async () => {
     console.log(name);
-    // https://api.agify.io/?name=${username}
+
 
     setResult(await apiData(name));
   }
