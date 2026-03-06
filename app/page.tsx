@@ -25,7 +25,7 @@ export default function Home() {
     console.log(name);
 
 
-    setResult(await apiData(name));
+    setResult(await apiData());
   }
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -39,9 +39,6 @@ export default function Home() {
     }
   }
 
-  //example for importing components
-  // TextComponent;
-
   useEffect(() => {
     console.log("Use Effect is running");
     
@@ -50,9 +47,7 @@ export default function Home() {
   useEffect(() => {
     const handleReduce = () => {
       let arr = [1, 1, 1, 1, 1,];
-
-      // () =>
-      // () => {  return  }
+      
       let arr2 = arr.reduce((total, currentValue) => {
         console.log("Total: ", total); 
         console.log("CurrentValue: ", currentValue);
