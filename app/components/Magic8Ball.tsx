@@ -3,11 +3,8 @@
 import { Card } from "flowbite-react";
 import apiData from "@/scripts/DataService";
 
-interface GreetingProps {
-  response: string; 
-}
 
-const Greeting = () => {
+const Magic8Ball = () => {
   apiData();
 
   let responses = [
@@ -32,4 +29,4 @@ const Greeting = () => {
   );
 };
 
-export default Greeting;
+export default Magic8Ball;

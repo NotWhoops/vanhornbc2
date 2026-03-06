@@ -3,11 +3,11 @@
 import { Card } from "flowbite-react";
 import apiData from "@/scripts/DataService";
 
-interface GreetingProps {
+interface ReverseItAlphanumericProps {
   word: string;
 }
 
-const Greeting = ({ word }: GreetingProps) => {
+const ReverseItAlphanumeric = ({ word }: ReverseItAlphanumericProps) => {
   apiData();
 
   let reversed = word.split("").reverse().join("");
@@ -21,4 +21,4 @@ const Greeting = ({ word }: GreetingProps) => {
   );
 };
 
-export default Greeting;
+export default ReverseItAlphanumeric;

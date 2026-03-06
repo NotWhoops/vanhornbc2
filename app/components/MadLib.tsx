@@ -3,7 +3,7 @@
 import { Card } from 'flowbite-react';
 import apiData from '@/scripts/DataService';
 
-interface GreetingProps {
+interface MadLibProps {
     adjective: string;
     noun: string;
     verb: string;
@@ -11,7 +11,7 @@ interface GreetingProps {
     emotion: string;
 }
 
-const Greeting = ({adjective, noun, verb, place, emotion}:GreetingProps) => {
+const MadLib = ({adjective, noun, verb, place, emotion}: MadLibProps) => {
 
 apiData();
 
@@ -22,4 +22,4 @@ apiData();
   )
 }
 
-export default Greeting
+export default MadLib;

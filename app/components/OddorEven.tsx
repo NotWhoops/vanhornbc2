@@ -3,11 +3,11 @@
 import { Card } from "flowbite-react";
 import apiData from "@/scripts/DataService";
 
-interface GreetingProps {
+interface OddOrEvenProps {
   num: number;
 }
 
-const Greeting = ({ num }: GreetingProps) => {
+const OddOrEven = ({ num }: OddOrEvenProps) => {
   apiData();
 
   let isEven = num % 2 === 0;
@@ -23,4 +23,4 @@ const Greeting = ({ num }: GreetingProps) => {
   );
 };
 
-export default Greeting;
+export default OddOrEven;

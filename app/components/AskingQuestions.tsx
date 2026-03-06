@@ -3,12 +3,12 @@
 import { Card } from "flowbite-react";
 import apiData from "@/scripts/DataService";
 
-interface GreetingProps {
+interface AskingQuestionsProps {
   name: string;
   time: number;
 }
 
-const Greeting = ({ name, time }: GreetingProps) => {
+const AskingQuestions = ({ name, time }: AskingQuestionsProps) => {
   apiData();
 
   return (
@@ -18,4 +18,4 @@ const Greeting = ({ name, time }: GreetingProps) => {
   );
 };
 
-export default Greeting;
+export default AskingQuestions;

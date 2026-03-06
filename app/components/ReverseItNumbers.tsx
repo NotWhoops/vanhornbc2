@@ -3,11 +3,11 @@
 import { Card } from "flowbite-react";
 import apiData from "@/scripts/DataService";
 
-interface GreetingProps {
+interface ReverseItNumbersProps {
   num: number;
 }
 
-const Greeting = ({ num }: GreetingProps) => {
+const ReverseItNumbers = ({ num }: ReverseItNumbersProps) => {
   apiData();
 
   
@@ -22,4 +22,4 @@ const Greeting = ({ num }: GreetingProps) => {
   );
 };
 
-export default Greeting;
+export default ReverseItNumbers;

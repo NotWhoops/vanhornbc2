@@ -4,14 +4,14 @@ import { Card } from "flowbite-react";
 import apiData from '@/scripts/DataService';
 
 
-interface GreetingProps {
+interface GuessItProps {
   diff: "Easy" | "Medium" | "Hard";
   guess: number;
 }
 
 apiData();
 
-const Greeting = ({ diff, guess }: GreetingProps) => {
+const GuessIt = ({ diff, guess }: GuessItProps) => {
   let getRandom = (max: number) =>
     Math.floor(Math.random() * max) + 1;
 
@@ -53,4 +53,4 @@ const Greeting = ({ diff, guess }: GreetingProps) => {
   );
 };
 
-export default Greeting;
+export default GuessIt;

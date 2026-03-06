@@ -3,12 +3,12 @@
 import { Card } from "flowbite-react";
 import apiData from "@/scripts/DataService";
 
-interface GreetingProps {
+interface AddingTwoNumbersProps {
   num1: number;
   num2: number;
 }
 
-const Greeting = ({ num1, num2 }: GreetingProps) => {
+const AddingTwoNumbers = ({ num1, num2 }: AddingTwoNumbersProps) => {
   apiData();
 
   const total = num1 + num2;
@@ -22,4 +22,4 @@ const Greeting = ({ num1, num2 }: GreetingProps) => {
   );
 };
 
-export default Greeting;
+export default AddingTwoNumbers;

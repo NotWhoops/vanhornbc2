@@ -3,13 +3,8 @@
 import { Card } from "flowbite-react";
 import apiData from "@/scripts/DataService";
 
-interface GreetingProps {
-  fastfood?: string;
-  pizza?: string;
-  restaurants?: string;
-}
 
-const Greeting = () => {
+const RestaurantPicker = () => {
   apiData();
 
   let fastfood = [
@@ -69,4 +64,4 @@ const Greeting = () => {
   );
 };
 
-export default Greeting;
+export default RestaurantPicker;

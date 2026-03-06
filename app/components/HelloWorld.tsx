@@ -3,11 +3,11 @@
 import { Card } from "flowbite-react";
 import apiData from "@/scripts/DataService";
 
-interface GreetingProps {
+interface HelloWorldProps {
   helloworld: string;
 }
 
-const Greeting = ({ helloworld }: GreetingProps) => {
+const HelloWorld = ({ helloworld }: HelloWorldProps) => {
   apiData();
 
   return (
@@ -17,4 +17,4 @@ const Greeting = ({ helloworld }: GreetingProps) => {
   );
 };
 
-export default Greeting;
+export default HelloWorld;
