@@ -57,6 +57,7 @@ export default function Home() {
 
 
   
+  const [name, setName] = useState<AddingTwoNumbers>();
   const [result1, setResult1] = useState<AddingTwoNumbers>();
   const [result2, setResult2] = useState<AskingQuestions>();
   const [result3, setResult3] = useState<GuessIt>();
@@ -79,11 +80,6 @@ export default function Home() {
     setResult6(await apiData());
     setResult7(await apiData());
     setResult8(await apiData());
-  }
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    
-    setResult1(event.target.value);
   }
 
   const handleOnKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
@@ -124,11 +120,11 @@ export default function Home() {
   
   return (
     <div className="flex min-h-screen items-center justify-center font-sans dark: bg-black"> 
-        <input type="text" className="bg-white text-black" onChange={(event) => setName(event.target.value)} onKeyDown={(event) => handleOnKeyDown(event)} />
+        <input type="text" className="bg-white text-black" onKeyDown={(event) => handleOnKeyDown(event)} />
         <button onClick={handleSubmit}>Submit</button>
         <div>
-          <p>HelloWorld: {result?.age}</p>
-          <p>Count: {result?.count}</p>
+          <p>HelloWorld: {result1?.num1}</p>
+          <p>Count: {result1?.num2}</p>
         </div>
     </div>
   )
